@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_zhikong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_audit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+
+                android:gravity="center|left"
+                android:text="  质控操作"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tv_add_Accuse"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/edit" />
+        </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorgay" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"
+                android:text="当前质控占比为:" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="增加质控信息"
+                android:textColor="@color/white" />
+
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/stv_true"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    stv:sCenterTextColor="@color/white"
+                    stv:sCenterTextSize="16sp"
+                    stv:sCenterTextString="提交"
+                    stv:sShapeCornersRadius="5dp"
+                    stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                    stv:sShapeSelectorPressedColor="@color/statusBar"
+                    stv:sUseShape="true" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

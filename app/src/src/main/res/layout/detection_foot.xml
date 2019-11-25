@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_reamk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:text="  审核意见"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorgay" />
+
+        <TextView
+            android:id="@+id/tv_auditOpinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="sdfsfsfsdfsfssfds"
+            android:textColor="@color/text_gey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_audit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:text="  方案审核"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorgay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center|left"
+                    android:text="项目负责人:" />
+
+                <TextView
+                    android:id="@+id/tv_dev_person"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:hint="请选择项目负责人" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuan_jiao_ju_xing"
+                android:gravity="top"
+                android:hint="请输入审核意见"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/stv_true"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        stv:sCenterTextColor="@color/white"
+                        stv:sCenterTextSize="16sp"
+                        stv:sCenterTextString="通过"
+                        stv:sShapeCornersRadius="5dp"
+                        stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                        stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                        stv:sUseShape="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/stv_false"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        stv:sCenterTextColor="@color/white"
+                        stv:sCenterTextSize="16sp"
+                        stv:sCenterTextString="不通过"
+                        stv:sShapeCornersRadius="5dp"
+                        stv:sShapeSelectorNormalColor="@color/red_bg"
+                        stv:sShapeSelectorPressedColor="@color/red_bg"
+                        stv:sUseShape="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+
+</LinearLayout>

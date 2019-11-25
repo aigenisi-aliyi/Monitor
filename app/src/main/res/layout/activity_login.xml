@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.LoginActivity">
+    <include layout="@layout/navigation_bar" />
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rv_login_lodo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/logo111"
+            app:riv_border_color="#FFFFFFFF"
+            app:riv_border_width="1dip"
+            app:riv_corner_radius="75dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="clamp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:digits="0123456789abcdefghjigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:drawableLeft="@mipmap/user01"
+                android:drawablePadding="20dp"
+                android:hint="@string/login_user"
+                android:maxLength="25"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@mipmap/delete789465"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/Line_0_5_gray"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/whites"
+                android:digits="0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:drawableLeft="@mipmap/pwd01"
+                android:drawablePadding="20dp"
+                android:hint="@string/login_pwd"
+                android:inputType="textPassword"
+                android:maxLength="25"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_delete1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@mipmap/delete789465"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_forgetpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="50dp"
+                    android:text="@string/login_forgetpwd"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingLeft="30dp"
+                    android:text="@string/register"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            stv:sCenterTextColor="@color/white"
+            stv:sCenterTextString="登录"
+            stv:sShapeCornersRadius="10dp"
+            stv:sShapeSelectorNormalColor="@color/colorPrimary"
+            stv:sShapeSelectorPressedColor="@color/colorPrimary"
+            stv:sUseShape="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

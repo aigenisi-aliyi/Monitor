@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_foot"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/add_photo_select" />
+
+        <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/stv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            stv:sCenterTextColor="@color/white"
+            stv:sCenterTextSize="18sp"
+            stv:sCenterTextString="提交"
+            stv:sShapeCornersRadius="20dp"
+            stv:sShapeSelectorNormalColor="@color/colorPrimary"
+            stv:sShapeSelectorPressedColor="@color/colorPrimary"
+            stv:sUseShape="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

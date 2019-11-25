@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.person.ForgetpwdActivity">
+
+
+    <include layout="@layout/navigation_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_oldpwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入旧密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/et_newpwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/et_cpwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="重复新密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="温馨提示:密码一周只能修改一次！"
+        android:visibility="invisible" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextString="@string/btn_true"
+        stv:sShapeCornersRadius="10dp"
+        stv:sShapeSelectorNormalColor="@color/colorPrimary"
+        stv:sShapeSelectorPressedColor="@color/blue_g"
+        stv:sUseShape="true" />
+</LinearLayout>

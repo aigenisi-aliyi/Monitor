@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="采样时间"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:hint="请选择采样时间"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="样品规格及数量"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_num"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入样品规格及数量"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="流量"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_flows"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入水的流量"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="水温"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_watertmp"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入河水水温"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="PH值"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_PH"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入PH值"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="溶解氧"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_Oxygen"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入溶解氧的值"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="电导率"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_electrical"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入电导率的值"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="样品状态"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_SampleStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请填写样品状态"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="备注    200字以内"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <EditText
+
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuan_jiao_ju_xing"
+            android:gravity="top"
+            android:hint="请输入备注信息!"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

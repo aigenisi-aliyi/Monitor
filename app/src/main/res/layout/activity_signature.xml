@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.SignatureActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.venusic.handwrite.view.HandWriteView
+            android:id="@+id/hw_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:paintColor="#000000"
+            app:paintMaxWidth="20px"
+            app:paintMinWidth="10px" />
+
+
+        <com.monitor.changtian.widght.CustomFAB
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cf_imageButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/clears111"
+            android:tint="@android:color/white"
+            custom:bg_color="@color/colorPrimary" />
+    </RelativeLayout>
+
+
+</LinearLayout>

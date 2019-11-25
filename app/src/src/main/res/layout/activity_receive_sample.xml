@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.monitor.sample.ReceiveSampleActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg1_2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/yuan_jiao"
+                    android:elevation="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="样品信息"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="样品编号" />
+
+                        <TextView
+                            android:id="@+id/et_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="请输入样品编号"
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_baozhuang"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="样品包装" />
+
+                        <TextView
+                            android:id="@+id/tv_sampingPacking"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_zhuangtai"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="样品状态" />
+
+                        <TextView
+                            android:id="@+id/tv_sampingStatus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="样品来源" />
+
+                        <TextView
+                            android:id="@+id/tv_samplemode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="送样人" />
+
+                        <TextView
+                            android:id="@+id/tv_selectperson"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:hint="请选择送样人"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="送样量" />
+
+                        <EditText
+                            android:id="@+id/et_value"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:hint="请输入送样量"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_unit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:gravity="center|left"
+                            android:textColor="@color/text_color1"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuan_jiao"
+                    android:elevation="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="位置信息"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="样品室" />
+
+                        <TextView
+                            android:id="@+id/tv_room"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="请选择样品室"
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="具体位置" />
+
+                        <EditText
+                            android:id="@+id/et_addressInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/yuan_jiao_kuang"
+                            android:gravity="center|left"
+                            android:hint="请输入具体位置"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/color3"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuan_jiao"
+                    android:elevation="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="备注信息"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/yuan_jiao_ju_xing"
+                        android:gravity="top"
+                        android:hint="请输入备注信息"
+                        android:padding="5dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/yuan_jiao"
+                    android:elevation="4dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="拒收原因"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_jushou"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/yuan_jiao_ju_xing"
+                        android:gravity="top"
+                        android:hint="请输入拒收原因"
+                        android:padding="5dp"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/stv_false"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            stv:sCenterTextColor="@color/white"
+                            stv:sCenterTextSize="16sp"
+                            stv:sCenterTextString="拒收样品"
+                            stv:sShapeCornersRadius="5dp"
+                            stv:sShapeSelectorNormalColor="@color/red_bg"
+                            stv:sShapeSelectorPressedColor="@color/red_bg"
+                            stv:sUseShape="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/stv_login"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            stv:sCenterTextColor="@color/white"
+                            stv:sCenterTextSize="16sp"
+                            stv:sCenterTextString="接收样品"
+                            stv:sShapeCornersRadius="5dp"
+                            stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                            stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                            stv:sUseShape="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

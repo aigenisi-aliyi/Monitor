@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@mipmap/user_bg"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rv_login_lodo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitXY"
+                        app:riv_border_color="#FFFFFFFF"
+                        app:riv_border_width="1dip"
+                        app:riv_corner_radius="75dp"
+                        app:riv_mutate_background="true"
+                        app:riv_oval="true"
+                        app:riv_tile_mode="clamp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_names"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:text="admin"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center|left"
+                        android:text="性别:nan "
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_phones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="电话:1870000000"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@mipmap/uesr_ziliao" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="个人资料"
+                            android:textColor="@color/texteblack"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:src="@mipmap/user_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/colorgay" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@mipmap/user_aq" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="账户安全"
+                            android:textColor="@color/texteblack"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:src="@mipmap/user_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/colorgay" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@mipmap/user_tj" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="统计"
+                            android:textColor="@color/texteblack"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:src="@mipmap/user_right" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/colorgay" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sss"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:src="@mipmap/user_about" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="关于我们"
+                            android:textColor="@color/texteblack"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:src="@mipmap/user_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@color/colorgay" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

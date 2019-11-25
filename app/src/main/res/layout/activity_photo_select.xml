@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.photo.PhotoSelectActivity">
+
+    <include layout="@layout/image_text_titlebar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.monitor.changtian.widght.AutoHeightGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:columnWidth="@dimen/image_add_maopao_width"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:numColumns="4"
+            android:paddingLeft="20dp"
+            android:stretchMode="none"
+            android:verticalSpacing="8dp" />
+
+        <com.allen.library.SuperTextView
+            xmlns:stv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/stv_clie"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"
+            stv:sCenterTextColor="@color/white"
+            stv:sCenterTextString="@string/alldelect"
+            stv:sShapeCornersRadius="10dp"
+            android:visibility="gone"
+            stv:sShapeSelectorNormalColor="@color/red_bg"
+            stv:sShapeSelectorPressedColor="@color/red_btn"
+            stv:sUseShape="true" />
+
+    </LinearLayout>
+</LinearLayout>

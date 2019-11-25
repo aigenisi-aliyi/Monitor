@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_infolook"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="地表水"
+                android:textSize="17sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="杭州西湖" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="xxx" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_isShow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/stv_false"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    stv:sCenterTextColor="@color/white"
+                    stv:sCenterTextSize="16sp"
+                    stv:sCenterTextString="采样结束"
+                    stv:sShapeCornersRadius="20dp"
+                    stv:sShapeSelectorNormalColor="@color/red_bg"
+                    stv:sShapeSelectorPressedColor="@color/red_bg"
+                    stv:sUseShape="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/stv_true"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    stv:sCenterTextColor="@color/white"
+                    stv:sCenterTextSize="16sp"
+                    stv:sCenterTextString="添加样品"
+                    stv:sShapeCornersRadius="20dp"
+                    stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                    stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                    stv:sUseShape="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgay" />
+</LinearLayout>

@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">中测</string>
+    <!--<string name="app_name">CMA</string>-->
+    <string name="notifyTitle">提示</string>
+    <string name="gpsNotifyMsg">当前手机扫描蓝牙需要打开定位功能。</string>
+
+    <string name="yuqi">逾期提醒</string>
+    <string name="shenp">审批提醒</string>
+    <string name="kucun">库存预警</string>
+    <string name="function">功能</string>
+    <string name="weather">天气</string>
+    <string name="weatherlist">天气信息</string>
+    <string name="seeting">设置中心</string>
+    <string name="login">登录</string>
+    <string name="login_user">请输入用户名</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="login_forgetpwd">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="btn_true">确定</string>
+    <string name="personalinfo">个人资料</string>
+    <string name="exit">注销</string>
+    <string name="update_pwd">修改密码</string>
+    <string name="update_phone">修改手机号</string>
+    <string name="updateversion">版本更新</string>
+    <string name="help">使用帮助</string>
+    <string name="message">消息</string>
+    <string name="sign">签名测试</string>
+    <string name="alldelect">全部删除</string>
+    <string name="name">姓名</string>
+    <string name="user">帐号</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="worktime">工作时间</string>
+    <string name="webviewinfo">资讯详情</string>
+    <string name="photoselect_map">示意图</string>
+    <string name="projectinfo_details">工程详情</string>
+    <string name="message_permission_rationale">允许以下权限以便程序继续执行：\n\n%1$s</string>
+    <string name="message_permission_always_failed">我们需要以下权限，请在设置中为我们开启：\n\n%1$s</string>
+    <string name="setting">设置</string>
+    <string name="resume">继续</string>
+    <string name="cancel">取消</string>
+    <string name="ok">好</string>
+    <string name="no">不</string>
+    <string name="title_dialog">提示</string>
+    <string name="map">地图</string>
+    <string name="qr_scan_tips">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="please_user">请输入用户名</string>
+    <string name="please_pwd">请输入密码</string>
+    <string name="detection_info">检测方案详情</string>
+    <string name="home">首页</string>
+    <string name="task">任务</string>
+    <string name="me">我的</string>
+    <string name="me_message">我的消息</string>
+    <string name="humidity">湿度</string>
+    <string name="barometric">大气压</string>
+    <string-array name="message_title">
+        <item>任务</item>
+        <item>审批</item>
+        <item>催办</item>
+        <item>进度</item>
+    </string-array>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+
+    <string name="ernum">二维码</string>
+
+
+    <string-array name="reper_title">
+        <item>设备归还</item>
+        <item>耗材归还</item>
+    </string-array>
+
+    <string-array name="detection_title">
+        <item>待审核</item>
+        <item>已审核</item>
+    </string-array>
+
+
+    <string-array name="offer_title">
+        <item>待初审</item>
+        <item>已初审</item>
+        <item>待复审</item>
+        <item>已复审</item>
+    </string-array>
+
+    <string-array name="task_title">
+        <item>分配</item>
+        <item>再分配</item>
+        <item>异常处置</item>
+        <item>采样审批</item>
+    </string-array>
+
+    <string-array name="accuse_title">
+        <item>新任务</item>
+        <item>未质控</item>
+        <item>已质控</item>
+        <item>质控审核</item>
+    </string-array>
+
+    <string-array name="sample_title">
+        <item>待检</item>
+        <item>再检</item>
+        <item>已检</item>
+        <item>留样</item>
+    </string-array>
+    <string name="finance">财务</string>
+
+
+    <string-array name="tasks_title">
+        <item>任务</item>
+        <item>采样审批</item>
+    </string-array>
+
+
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+</resources>

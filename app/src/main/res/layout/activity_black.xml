@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/navigation_bar" />
+    <Button
+        android:id="@+id/id_bt_add"
+        android:text="新增一行"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <com.bin.david.form.core.SmartTable
+       android:id="@+id/id_yanqiheidu"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+</LinearLayout>

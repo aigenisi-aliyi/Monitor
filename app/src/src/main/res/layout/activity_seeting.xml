@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.person.SeetingActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_updatepwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sDividerLineType="bottom"
+            stv:sLeftTextString="@string/update_pwd"
+            stv:sRightIconRes="@drawable/arrow_right_red" />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_updatephone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sDividerLineType="bottom"
+            android:visibility="gone"
+            stv:sLeftTextString="@string/update_phone"
+            stv:sRightIconRes="@drawable/arrow_right_red" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_updateversion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            stv:sDividerLineType="bottom"
+            stv:sLeftTextString="@string/updateversion"
+            stv:sRightIconRes="@drawable/arrow_right_red" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            stv:sDividerLineType="bottom"
+            stv:sLeftTextString="@string/help"
+            stv:sRightIconRes="@drawable/arrow_right_red" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            stv:sDividerLineType="bottom"
+            stv:sLeftTextString="@string/sign"
+            stv:sRightIconRes="@drawable/arrow_right_red" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="150dp"
+            stv:sCenterTextColor="@color/white"
+            stv:sCenterTextString="@string/exit"
+            stv:sShapeCornersRadius="10dp"
+            stv:sShapeSelectorNormalColor="@color/red_bg"
+            stv:sShapeSelectorPressedColor="@color/red_btn"
+            stv:sUseShape="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="审核意见"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <EditText
+
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuan_jiao_ju_xing"
+            android:gravity="top"
+            android:hint="请输入审核意见!"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/stv_true"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="通过"
+                stv:sShapeCornersRadius="5dp"
+                stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                stv:sUseShape="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/stv_false"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="不通过"
+                stv:sShapeCornersRadius="5dp"
+                stv:sShapeSelectorNormalColor="@color/red_bg"
+                stv:sShapeSelectorPressedColor="@color/red_bg"
+                stv:sUseShape="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

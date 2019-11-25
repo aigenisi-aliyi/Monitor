@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monitor.changtian">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.PERMISSION_GRANTED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--设置蓝牙权限-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo111"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo111"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="3db6b96be0" />
+
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YappekmqkPlP5yjxeGQXeDbRYjqmOgzt" />
+
+        <!-- 创建接受消息的服务 -->
+        <service android:name="com.monitor.service.FrontdeskService" />
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f8623be69674d051e7653443b2cd0ad5" />
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.WeatherListActivity_"
+            android:label="@string/weatherlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.person.SeetingActivity_"
+            android:label="@string/seeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.person.ForgetpwdActivity_"
+            android:label="@string/seeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.person.PersonalinfoActivity_"
+            android:label="@string/personalinfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.person.MessageActivity_"
+            android:label="@string/message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebViewInfoActivity_"
+            android:label="@string/webviewinfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity_"
+            android:label="@string/register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.photo.PhotoSelectActivity_"
+            android:label="@string/photoselect_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.TaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PopupWindowActivity"
+            android:theme="@style/MyDialog" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 二维码 -->
+        <activity
+            android:name=".activity.PhotoLookActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.auditor.AuditorActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditRecordActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.auditor.AuditorInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TaskProActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.audit.AuditMainActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.leader.LeaderMainActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.DetectionActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignatureActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.audit.ExamineActivity_"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name="com.monitor.accuse.AccuseActivity_" /> -->
+        <activity
+            android:name="com.monitor.experiment.ExperimentActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.finance.FinanceActivity_"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name="com.monitor.sample.SampleActivity_" /> -->
+        <activity
+            android:name="com.monitor.finance.EditPaymentWayActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.finance.FinanceListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.finance.FinanceMoneyRecordActivity_"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name="com.monitor.finance.FinanceMainActivity_" /> -->
+        <activity
+            android:name="com.monitor.finance.DfActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.monitor.finance.DfwActivity_" />
+        <activity android:name="com.monitor.finance.YjActivity_" />
+        <!-- <activity android:name="com.monitor.taskallocation.TaskAllocationMainActivity_" />&lt;!&ndash;&ndash;&gt; -->
+        <activity
+            android:name="com.monitor.taskallocation.Task_ContractInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.Task_AddActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.ExperimentSelectorActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.TaskinfoActivity_"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name="com.monitor.repertory.RepertoryMainActivity_" /> -->
+        <activity
+            android:name="com.monitor.repertory.EquipmentListInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.repertory.ConsumableListInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.sample.SampleInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddSampleInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CalibrationActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.SampleListInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.SampleinfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.sample.ReceiveSampleActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.TaskCorrelationinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.AbnormalActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.detectionschemeaudit.DetectionAuditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.offer.OfferinfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.AccuseInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.AwaitAccuseActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.Task_AddSapmleActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.TaskAddSampleInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.sample.GetSampleActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SampleProofreadActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.ReceiveDevActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.repertory.ReturnActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.AccuseAllinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.Acc_TaskinfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.BleUtils.BleListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.finance.FinanceMainActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.offer.OfferFragment_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.TaskMainFragment_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment.SampleTaskMainFragment_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.detectionschemeaudit.DetectionSchemeAuditMainFragment_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.AccuseMainFragment_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.sample.SampleActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ParallelActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.accuse.AddAccuseActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.taskallocation.task_list.TaskCycleListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.TaskPointsFrequencyListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LookContentActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.EquipmentreturnActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.task.Equipmentreturn_infoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.monitor.BleUtils.MeteorologicalActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DialogActivity_"
+            android:theme="@style/NoTitleDialog" />
+        <activity
+            android:name="com.monitor.BleUtils.NewBleListActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZBarActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.CalibrationInfoActivity_" />
+        <activity android:name="com.monitor.accuse.QualitycontrolApprovalListActivity_" />
+        <activity android:name="com.monitor.accuse.QualitycontrolApprovalInfoActivity_"></activity>
+    </application>
+
+</manifest>

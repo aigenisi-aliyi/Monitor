@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_popn"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text="项目名称:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text=""
+            android:hint="请选择项目名称"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text="项目编号:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_tv_proNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorgay"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text="合同编号:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_tv_conNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text="天气情况:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:text="大气压 101Kpa"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorgay" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_barnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="17dp"
+                android:gravity="center|left"
+                android:text="样品编号"
+                android:textColor="@color/task_info_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_bar_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left"
+                android:hint="请点击扫面条形码/二维码"
+                android:textColor="@color/text_color1"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorgay" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

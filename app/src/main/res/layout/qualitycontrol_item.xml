@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_look"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/tv0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="18-12-18-11-447"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="样品类型:平行样" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="实验样品码:123245454" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="原样样品码:224454" />
+
+            <TextView
+
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="平行样品码:224454"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_caozuo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/stv_true"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="通过"
+                stv:sShapeCornersRadius="5dp"
+                stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                stv:sUseShape="true" />
+
+            <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/stv_true1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="不通过"
+                stv:sShapeCornersRadius="5dp"
+                stv:sShapeSelectorNormalColor="@color/red_bg"
+                stv:sShapeSelectorPressedColor="@color/red_bg"
+                stv:sUseShape="true" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_shenhe"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                stv:sCenterTextColor="@color/white"
+                stv:sCenterTextSize="16sp"
+                stv:sCenterTextString="已审核"
+                stv:sShapeCornersRadius="5dp"
+                stv:sShapeSelectorNormalColor="@color/colorPrimary"
+                stv:sShapeSelectorPressedColor="@color/colorPrimary"
+                stv:sUseShape="true" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="因子名称" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorgay" />
+</LinearLayout>

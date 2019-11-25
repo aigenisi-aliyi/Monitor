@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="项目名称:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_map_pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="xxxxx"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/Line_0_5_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="创建时间:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_map_pro_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="xxxx"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/Line_0_5_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="检测内容:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_map_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="检测内容"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/Line_0_5_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="检测项目:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_map_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="污水"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/Line_0_5_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="具体操作:"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_map_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="取水样"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/Line_0_5_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="联系委托人"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

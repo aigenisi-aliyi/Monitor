@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.monitor.changtian.activity.person.PersonalinfoActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextSize="16sp"
+        stv:sLeftTextString="@string/user"
+        stv:sRightIconRes="@drawable/arrow_right_red"
+        stv:sRightTextColor="@color/blak"
+        stv:sRightTextSize="14sp"
+        stv:sRightTextString="-" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextSize="16sp"
+        stv:sLeftTextString="@string/sex"
+        stv:sRightIconRes="@drawable/arrow_right_red"
+        stv:sRightTextColor="@color/blak"
+        stv:sRightTextSize="14sp"
+        stv:sRightTextString="-" >
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            stv:sLeftTextSize="16sp"
+            stv:sLeftTextString="@string/name"
+            stv:sRightIconRes="@drawable/arrow_right_red"
+            stv:sRightTextColor="@color/blak"
+            stv:sRightTextSize="14sp"
+            stv:sRightTextString="-" />
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_shengri"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextSize="16sp"
+        stv:sLeftTextString="@string/birthday"
+        stv:sRightIconRes="@drawable/arrow_right_red"
+        stv:sRightTextColor="@color/blak"
+        stv:sRightTextSize="14sp"
+        stv:sRightTextString="-" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_workTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        stv:sLeftTextSize="16sp"
+        stv:sLeftTextString="@string/worktime"
+        stv:sRightIconRes="@drawable/arrow_right_red"
+        stv:sRightTextColor="@color/blak"
+        stv:sRightTextSize="14sp"
+        stv:sRightTextString="-" />
+</LinearLayout>

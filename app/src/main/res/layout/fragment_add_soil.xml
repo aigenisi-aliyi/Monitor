@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="采样时间"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_time_soil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:hint="请选择采样时间"
+            android:textColor="@color/text_color1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="样品编号"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_specimen_num_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入样品编号"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="样品规格及数量"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_num_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入样品规格及数量"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="土表植被及耕作情况"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_condition_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入土表植被及耕作情况"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="采样深度"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_depth_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入采样深度"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="颜色"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_color_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入颜色"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="质地"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_character_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入质地"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="湿度"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <com.monitor.changtian.view.ClearEditText
+            android:id="@+id/et_humidity_soil"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            android:drawableRight="@drawable/clean"
+            android:hint="请输入湿度"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorgay" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="备注    200字以内"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <EditText
+
+            android:id="@+id/et_remark_soil"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuan_jiao_ju_xing"
+            android:gravity="top"
+            android:hint="请输入备注信息!"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center|left"
+            android:text="说明    200字以内"
+            android:textColor="@color/task_info_color"
+            android:textSize="17sp" />
+
+        <EditText
+
+            android:id="@+id/et_explain_soil"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuan_jiao_ju_xing"
+            android:gravity="top"
+            android:hint="请输入说明!"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <com.allen.library.SuperTextView xmlns:stv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/stv_submit_soil"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+
+        android:visibility="gone"
+        stv:sCenterTextColor="@color/white"
+        stv:sCenterTextSize="18sp"
+        stv:sCenterTextString="提交"
+        stv:sShapeCornersRadius="20dp"
+        stv:sShapeSelectorNormalColor="@color/colorPrimary"
+        stv:sShapeSelectorPressedColor="@color/colorPrimary"
+        stv:sUseShape="true" />
+
+
+</LinearLayout>

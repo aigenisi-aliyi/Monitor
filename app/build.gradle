@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+def AAVersion = '4.3.1'
+android {
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.monitor.changtian"       //包名称
+        minSdkVersion 19                            //最低支持版本号
+        targetSdkVersion 27                         //支持到27
+        versionCode 1                               //项目版本号
+        versionName "1.0"                           //项目版本名
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi-v7a"
+        }
+//        ndk {
+//            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+//            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+//        }
+//        sourceSets{
+//
+//            main{
+//                jniLibs.srcDirs=['libs']
+//            }
+//        }
+
+        sourceSets {
+            main {
+                jniLibs.srcDir 'libs'
+            }
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false         //是否对代码进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+//    bugtags {
+//        //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+//        appKey "f956ffb01eeec1127c5f7cfb9d1c2226"  //这里是你的 appKey
+//        appSecret "3b4bdda60dfe86ed50bd9593f59a1b0c"    //这里是你的 appSecret，管理员在设置页可以查看
+//        mappingUploadEnabled true
+//        //网络跟踪功能配置(企业版)
+//        trackingNetworkEnabled true
+//    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+//    testImplementation-引入的依赖是java unit单元测试，是运行在当前电脑的jvm上的单元测试；
+    testImplementation 'junit:junit:4.12'
+
+//    androidTestImplementation-引入的依赖是Android单元测试，是运行在Android环境的单元测试
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':mainnavigatetabbar')
+    //添加注解框架
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation 'com.github.lygttpod:SuperTextView:2.1.6'
+    //log
+    implementation 'com.vise.xiaoyaoyou:viselog:1.1.2'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.32'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.9'
+    implementation 'com.github.lygttpod:RxHttpUtils:2.1.4'
+    //
+    implementation project(':library')
+    //圆形头像
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+    //    3D地图so及jar
+    //    implementation 'com.amap.api:3dmap:latest.integration'
+    //        //定位功能
+    //    implementation 'com.amap.api:location:latest.integration'
+    //        //搜索功能
+    //    implementation 'com.amap.api:search:latest.integration'
+    //列表文字滚动
+    implementation 'com.sunfusheng:marqueeview:1.3.0'
+    implementation files('libs/androidutils.jar')
+    implementation files('libs/badgeview.jar')
+    //解析工具
+    implementation 'com.alibaba:fastjson:1.2.38'
+    implementation 'com.android.support:multidex:1.0.1'
+    //    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.rabbitmq:amqp-client:4.0.0'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //签字
+    implementation 'com.github.venusic:E-signature:0.2'
+    configurations.all {
+        resolutionStrategy {
+            force "com.android.support:appcompat-v7:27.1.1"
+            force "com.android.support:support-v4:27.1.1"
+        }
+    }
+    implementation 'com.github.donkingliang:LabelsView:1.4.2'
+    implementation 'com.contrarywind:Android-PickerView:3.2.5'
+    files('libs/hellocharts-library-1.5.8.jar')
+    implementation 'com.feezu.liuli:timeselector:1.1.3+'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.clj.fastble:FastBleLib:2.3.2'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'me.jessyan:autosize:1.0.0'
+    implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.3.4'
+    implementation 'com.baidu.mobstat:mtj-sdk-circle:latest.integration'
+    implementation files('libs/AMap_Location_V4.3.0_20181016.jar')
+    implementation files('libs/AMap_Search_V6.5.0_20180930.jar')
+    implementation files('libs/Android_Map3D_SDK_V6.5.0_20180930.jar')
+    implementation files('libs/Volley.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    //表格控件
+    implementation 'com.github.huangyanbin:SmartTable:2.2.0'
+}

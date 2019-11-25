@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.monitor.audit.AuditMainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_audit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar">
+
+    </FrameLayout>
+
+    <com.monitor.changtian.widght.BottomBar
+        android:id="@+id/bottom_bar_audit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#FFFFFF" />
+</RelativeLayout>

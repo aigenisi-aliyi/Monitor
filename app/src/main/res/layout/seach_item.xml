@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="筛选"
+        android:textColor="@color/black_deep"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.56"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="关键字"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:background="#00000000"
+            android:hint="请输入内容" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.56"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/starttime"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_ll_starttime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/setting_tv_starttime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.56"
+                android:gravity="center|left"
+                android:hint="请选择开始时间" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|left"
+                android:layout_weight="0.79"
+                android:src="@drawable/back_w" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.56"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/endtime"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_ll_endtime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/setting_tv_endtime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.56"
+                android:gravity="center|left"
+                android:hint="请选择结束时间" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.794"
+                android:src="@drawable/back_w" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

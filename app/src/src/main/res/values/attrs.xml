@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 申请进度的自定义view-->
+    <declare-styleable name="AuditProgressView">
+        <!--当前步骤是否完成 -->
+        <attr name="apv_isCurrentComplete" format="boolean" />
+        <!--下一个步骤是否完成 -->
+        <attr name="apv_isNextComplete" format="boolean" />
+        <!--是不是第一个步骤 -->
+        <attr name="apv_isFirstStep" format="boolean" />
+        <!--是不是最后一个步骤 -->
+        <attr name="apv_isLastStep" format="boolean" />
+        <!--共有几个步骤 -->
+        <attr name="apv_stepCount" format="integer" />
+        <!--步骤提示 -->
+        <attr name="apv_text" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WechatTab">
+        <attr name="pstsIndicatorColorWe" format="color" />
+        <attr name="pstsUnderlineColorWe" format="color" />
+        <attr name="pstsDividerColorWe" format="color" />
+        <attr name="pstsIndicatorHeightWe" format="dimension" />
+        <attr name="pstsUnderlineHeightWe" format="dimension" />
+        <attr name="pstsDividerPaddingWe" format="dimension" />
+        <attr name="pstsTabPaddingLeftRightWe" format="dimension" />
+        <attr name="pstsScrollOffsetWe" format="dimension" />
+        <attr name="pstsTabBackgroundWe" format="reference" />
+        <attr name="pstsShouldExpandWe" format="boolean" />
+        <attr name="pstsTextAllCapsWe" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>
